@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>DevUp — это Ваш сайт</title>
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/Montserrat-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/static/css/vendor.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <script defer="defer" src="/static/js/main.js"></script>
+  </head>
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+        <div class="container-fluid header__container">
+          <a class="logo"
+            ><img
+              loading="lazy"
+              src="/static/img/logo.svg"
+              class="image"
+              width="150"
+              height="45"
+              alt="Логотип DevUp"
+          /></a>
+          <nav class="nav" title="Главное меню" data-menu>
+            <ul class="list-reset nav__list">
+              <li class="nav__item">
+                <a href="#main" class="nav__link" data-menu-item data-scroll
+                  >Главная</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#stages" class="nav__link" data-menu-item data-scroll
+                  >Этапы работы</a
+                >
+              </li>
+              <li class="nav__item nav__item--submenu">
+                <a
+                  href="#portfolio"
+                  class="nav__link"
+                  data-menu-item
+                  data-scroll
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item nav__item--sub-item">
+                <a
+                  href="https://astronix.online"
+                  class="nav__link nav__link--sub-link"
+                  target="_blank"
+                  >Astronix</a
+                >
+              </li>
+              <li class="nav__item nav__item">
+                <a
+                  href="https://citadeldobra.ru"
+                  class="nav__link nav__link--sub-link"
+                  target="_blank"
+                  >Цитадель</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#team" class="nav__link" data-menu-item data-scroll
+                  >Dream team</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" data-menu-item data-graph-path="form"
+                  >Сделать заказ</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="btn-reset burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            data-burger
+          >
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <p class="hero__subtitle">Мы команда DevUp</p>
+              <h1 class="hero__title">Мы любим<br />нашего заказчика</h1>
+              <button class="btn-reset btn hero__btn" data-graph-path="form">
+                Заказать сайт
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="about section-offset">
+          <div class="container">
+            <h2 class="about__title section-title">
+              <span class="section-title__span">Если выбирать</span> То почему
+              нас?
+            </h2>
+            <p class="about__descr">
+              DevUp — команда опытных узкопрофильных специалистов, которые
+              отвечают каждый за свой сегмент. Это позволяет реализовывать
+              проекты с минимальными затратами времени и по оптимальным ценам.
+              Также это обеспечивает качество конечного продукта, готового
+              к продвижению на просторах сети Интернет.
+            </p>
+          </div>
+        </section>
+        <section class="achivements">
+          <div class="achivements__container container-fluid">
+            <h2 class="visually-hidden">Наши лучшие качества</h2>
+            <ul class="list-reset achivements__list">
+              <li class="achivements__item">
+                <svg class="achivements__icon">
+                  <use xlink:href="/static/img/sprite.svg#clock"></use>
+                </svg>
+                <p class="achivements__descr">
+                  Вам нужна команда ответственных людей, которые выполняют
+                  работу вовремя? Мы работаем именно так: прозрачно, с
+                  выполнением всех обязательств и в установленные сроки.
+                </p>
+                <h3 class="achivements__subtitle">Ответственность</h3>
+              </li>
+              <li class="achivements__item">
+                <svg class="achivements__icon">
+                  <use xlink:href="/static/img/sprite.svg#bulb"></use>
+                </svg>
+                <p class="achivements__descr">
+                  Наша веб-студия работает без посредников, все работы выполняем
+                  сами, поэтому стоимость наших услуг ниже, чем в агентствах,
+                  и мы их объясняем.
+                </p>
+                <h3 class="achivements__subtitle">Обоснованность</h3>
+              </li>
+              <li class="achivements__item">
+                <svg class="achivements__icon">
+                  <use xlink:href="/static/img/sprite.svg#sms"></use>
+                </svg>
+                <p class="achivements__descr">
+                  Стремимся информировать заказчика о развитии проекта, вносим
+                  правки, консультируем, поэтому мы всегда на связи.
+                </p>
+                <h3 class="achivements__subtitle">Обратная связь</h3>
+              </li>
+              <li class="achivements__item">
+                <svg class="achivements__icon">
+                  <use xlink:href="/static/img/sprite.svg#like"></use>
+                </svg>
+                <p class="achivements__descr">
+                  Наша веб-студия по созданию сайтов работает со специалистами
+                  по всей стране. Полученный опыт позволяет нам гарантировать
+                  профессиональное выполнение задач.
+                </p>
+                <h3 class="achivements__subtitle">Профессионализм</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="stages section-offset" id="stages">
+          <div class="stages__container container">
+            <h2 class="stages__title section-title">
+              <span class="section-title__span">Как мы работаем</span> Этапы
+              работы
+            </h2>
+            <ul class="list-reset stages__list">
+              <li class="stages__item">
+                <div class="stages__content stages__content--accent">
+                  <h3 class="stages__subtitle">Первый контакт</h3>
+                  <div class="stages__descr">
+                    <p class="stages__text">
+                      При первом обращении в нашу студию веб-разработки сайтов
+                      мы:
+                    </p>
+                    <p class="stages__text">
+                      Выслушаем ваши пожелания и идеи о проекте.
+                    </p>
+                    <p class="stages__text">
+                      Обсудим с Вами задачи сайта и стратегии их решения.
+                    </p>
+                    <p class="stages__text">Предложим варианты.</p>
+                    <p class="stages__text">
+                      Оценим стоимость проекта и утвердим смету.
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__bg">
+                  <picture
+                    ><source srcset="/static/img/stage-1.avif" type="image/avif" />
+                    <source srcset="/static/img/stage-1.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="/static/img/stage-1.jpg"
+                      class="image"
+                      width="386"
+                      height="300"
+                      alt="Первый контакт"
+                  /></picture>
+                </div>
+              </li>
+              <li class="stages__item">
+                <div class="stages__content">
+                  <h3 class="stages__subtitle">Прототип</h3>
+                  <div class="stages__descr">
+                    <p class="stages__text">
+                      Для визуализации внешнего вида сайта мы подготовим
+                      прототипы основных страниц.
+                    </p>
+                    <p class="stages__text">
+                      Прототип — эскиз страницы сайта со схематичным
+                      отображением всех элементов.
+                    </p>
+                    <p class="stages__text">
+                      Прототип легко корректируется, поэтому его удобно
+                      использовать, чтобы вы могли оценить внешнюю структуру
+                      страницы, согласовать концепцию до начала работы над
+                      проектом.
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__bg">
+                  <picture
+                    ><source srcset="/static/img/stage-2.avif" type="image/avif" />
+                    <source srcset="/static/img/stage-2.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="/static/img/stage-2.jpg"
+                      class="image"
+                      width="386"
+                      height="300"
+                      alt="Прототип"
+                  /></picture>
+                </div>
+              </li>
+              <li class="stages__item">
+                <div class="stages__content">
+                  <h3 class="stages__subtitle">Дизайн</h3>
+                  <div class="stages__descr">
+                    <p class="stages__text">
+                      Корпоративный стиль, шрифт, цвет — все это учитывается при
+                      подготовке полноценного дизайна. Для создания сайтов наша
+                      web-студия продумает понятный и эффективный интерфейс.
+                      В результате вы получите красивый и функциональный дизайн
+                      сайта.
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__bg">
+                  <picture
+                    ><source srcset="/static/img/stage-3.avif" type="image/avif" />
+                    <source srcset="/static/img/stage-3.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="/static/img/stage-3.jpg"
+                      class="image"
+                      width="386"
+                      height="300"
+                      alt="Дизайн"
+                  /></picture>
+                </div>
+              </li>
+              <li class="stages__item">
+                <div class="stages__content">
+                  <h3 class="stages__subtitle">Разработка</h3>
+                  <div class="stages__descr">
+                    <p class="stages__text">
+                      Мы выполняем верстку, программируем сайт и его компоненты,
+                      настраиваем их.
+                    </p>
+                    <p class="stages__text">
+                      Производим настройку CMS (системы управления).
+                    </p>
+                    <p class="stages__text">
+                      Делаем адаптивную верстку, чтобы ресурс адекватно
+                      отображался на мобильных устройствах.
+                    </p>
+                    <p class="stages__text">Программируем функционал сайта.</p>
+                    <p class="stages__text">
+                      Настраиваем конфигурации безопасности.
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__bg">
+                  <picture
+                    ><source srcset="/static/img/stage-4.avif" type="image/avif" />
+                    <source srcset="/static/img/stage-4.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="/static/img/stage-4.jpg"
+                      class="image"
+                      width="386"
+                      height="300"
+                      alt="Разработка"
+                  /></picture>
+                </div>
+              </li>
+              <li class="stages__item">
+                <div class="stages__content stages__content--accent">
+                  <h3 class="stages__subtitle">Запуск</h3>
+                  <div class="stages__descr">
+                    <p class="stages__text">
+                      Разработанный сайт согласовывается с Вами, утверждается,
+                      после чего наша веб-студия приступает к «финальным
+                      штрихам»:
+                    </p>
+                    <p class="stages__text">Переносим сайт на хостинг.</p>
+                    <p class="stages__text">Подключает домен.</p>
+                    <p class="stages__text">Настраивает системы аналитики.</p>
+                    <p class="stages__text">
+                      Ваш сайт работает и приносит доход!
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__bg">
+                  <picture
+                    ><source srcset="/static/img/stage-5.avif" type="image/avif" />
+                    <source srcset="/static/img/stage-5.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="/static/img/stage-5.jpg"
+                      class="image"
+                      width="386"
+                      height="300"
+                      alt="Запуск"
+                  /></picture>
+                </div>
+              </li>
+              <li class="stages__item">
+                <button
+                  class="stages__btn btn-reset btn btn--block btn--disable"
+                >
+                  Подробнее
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="portfolio section-offset" id="portfolio">
+          <div class="container">
+            <h2 class="portfolio__title section-title">Портфолио</h2>
+            <ul class="list-reset portfolio__list">
+              <li class="portfolio__item portfolio__item--dark">
+                <h3 class="portfolio__subtitle portfolio__subtitle--accent">
+                  Astronix
+                </h3>
+                <p class="portfolio__descr portfolio__descr--light">
+                  Astronix — это больше, чем игра. Это масштабный проект,
+                  призванный объединить игровые механики с финансовыми, такими
+                  как NFT и криптовалюта.
+                </p>
+                <a
+                  href="https://astronix.online"
+                  class="portfolio__link portfolio__link--light"
+                  target="_blank"
+                  >Ссылка: astronix.online</a
+                >
+              </li>
+              <li class="portfolio__item portfolio__item--citadel">
+                <h3 class="portfolio__subtitle">Цитадель</h3>
+                <a
+                  href="http://citadeldobra.ru/"
+                  class="portfolio__link"
+                  target="_blank"
+                  >Ссылка: citadeldobra.ru</a
+                >
+              </li>
+            </ul>
+            <a class="portfolio__button btn btn--block btn--disable"
+              >Увидеть больше</a
+            >
+          </div>
+        </section>
+        <section class="team section-offset" id="team">
+          <div class="container">
+            <h2 class="team__title section-title">
+              <span class="section-title__span">Наша дружная</span> Команда
+            </h2>
+            <ul class="list-reset team__list">
+              <li class="team__item team__item--first">
+                <p class="team__info">Тимлид</p>
+                <h3 class="team__subtitle">Роман</h3>
+              </li>
+              <li class="team__item team__item--second">
+                <p class="team__info">Проджект-менеджер</p>
+                <h3 class="team__subtitle">Дмитрий</h3>
+              </li>
+              <li class="team__item team__item--third">
+                <p class="team__info">Программист</p>
+                <h3 class="team__subtitle">Алексей</h3>
+              </li>
+              <li class="team__item team__item--fourth">
+                <p class="team__info">Верстальщик</p>
+                <h3 class="team__subtitle">Михаил</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="order">
+          <div class="order__container container">
+            <div class="order__left">
+              <h2 class="order__title">
+                <span>С помощью этой кнопки вы можете</span> связаться с нами
+              </h2>
+            </div>
+            <div class="order__right">
+              <button class="btn-reset btn order__btn" data-graph-path="form">
+                Заказать сайт
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container-fluid">
+          <ul class="list-reset footer__list">
+            <li class="footer__item">
+              <h3 class="footer__subtitle">Последние проекты</h3>
+              <a
+                href="https://astronix.online"
+                class="footer__text footer__link"
+                target="_blank"
+                >astronix.online</a
+              >
+              <a
+                href="https://citadeldobra.ru"
+                class="footer__text footer__link"
+                target="_blank"
+                >citadeldobra.ru</a
+              >
+            </li>
+            <li class="footer__item">
+              <h3 class="footer__subtitle">Контакты</h3>
+              <a href="mailto:teamdevup@gmail.com" class="footer__mail"
+                >teamdevup@gmail.com</a
+              >
+              <a href="mailto:miksmirnov02@gmail.com" class="footer__mail"
+                >miksmirnov02@gmail.com</a
+              >
+            </li>
+            <li class="footer__item">
+              <h3 class="footer__subtitle">Сотрудничество</h3>
+              <a href="tel:+79833993030" class="footer__phone"
+                >+7 983 399-30-30</a
+              >
+            </li>
+          </ul>
+          <ul class="list-reset footer__social-list social-list">
+            <li class="social-list__item">
+              <a
+                href="https://tlgg.ru/79910614793"
+                class="social-list__link"
+                target="_blank"
+                ><svg class="">
+                  <use xlink:href="/static/img/sprite.svg#telegram"></use></svg
+              ></a>
+            </li>
+            <!-- <li class="social-list__item">
+        <a href="#" class="social-list__link" target="_blank">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </li> -->
+            <li class="social-list__item">
+              <a class="social-list__link" target="_blank"
+                ><svg class="">
+                  <use xlink:href="/static/img/sprite.svg#whatsapp"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__copy">Created by DevUp.team</p>
+        </div>
+      </footer>
+      <div class="graph-modal">
+        <div
+          class="graph-modal__container popup"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="form"
+        >
+          <button
+            class="btn-reset js-modal-close graph-modal__close"
+            aria-label="Закрыть модальное окно"
+          >
+            закрыть
+          </button>
+          <div class="graph-modal__content">
+            <h2 class="popup__title section-title">
+              <span class="section-title__span popup__span"
+                >Для начала сотрудничества вам нужно</span
+              >
+              Заполнить данные
+            </h2>
+            <form action="{{'/'}}" method="post" class="form popup__form">
+              <label class="form__label"
+                >Имя:
+                <input
+                  type="text"
+                  name="name"
+                  class="input-reset form__input input-name"
+                  placeholder="Введите ваше Имя"
+              /></label>
+              <label class="form__label"
+                >Email:
+                <input
+                  type="email"
+                  name="email"
+                  class="input-reset form__input input-email"
+                  placeholder="Введите ваш Email"
+              /></label>
+              <label class="form__label"
+                >Телефон:
+                <input
+                  type="tel"
+                  name="phone"
+                  class="input-reset form__input input-tel"
+                  placeholder="Введите ваш Телефон"
+              /></label>
+              <button class="btn-reset btn btn--accent form__btn">
+                Отправить
+              </button>
+            </form>
+            <p class="popup__descr">
+              Эти данные необходимы для того, чтобы в скором времени мы смогли
+              связаться с вами и обсудить дальнейшие действия. При более личном
+              общении наш консультант ответит на все ваши вопросы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
