@@ -51,6 +51,7 @@
     />
     <link rel="stylesheet" href="/static/css/vendor.css" />
     <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css" />
     <script defer="defer" src="/static/js/main.js"></script>
   </head>
   <body class="page__body">
@@ -108,9 +109,19 @@
                   >Dream team</a
                 >
               </li>
-              <li class="nav__item">
+              <li class="nav__item nav__item--submenu">
                 <a class="nav__link" data-menu-item data-graph-path="form"
                   >Сделать заказ</a
+                >
+              </li>
+              <li class="nav__item nav__item--sub-item">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScB6jwZhcqnwqLYx5zsTKESD6uEkIpb3XdfAjciYpbH6L3Uyg/viewform?usp=sharing"
+                  class="nav__link nav__link--sub-link"
+                  data-menu-item
+                  data-scroll
+                  target="_blank"
+                  >Бриф Google Forms</a
                 >
               </li>
             </ul>
@@ -129,7 +140,7 @@
         <section class="hero">
           <div class="hero__container container">
             <div class="hero__content">
-              <p class="hero__subtitle">Мы команда DevUp</p>
+              <p class="hero__subtitle">Команда DevUp</p>
               <h1 class="hero__title">Мы любим<br />нашего заказчика</h1>
               <button class="btn-reset btn hero__btn" data-graph-path="form">
                 Заказать сайт
@@ -530,47 +541,86 @@
             закрыть
           </button>
           <div class="graph-modal__content">
-            <h2 class="popup__title section-title">
-              <span class="section-title__span popup__span"
-                >Для начала сотрудничества вам нужно</span
-              >
-              Заполнить данные
-            </h2>
-            <form action="{{'/'}}" method="post" class="form popup__form">
-              <label class="form__label"
-                >Имя:
-                <input
-                  type="text"
-                  name="name"
-                  class="input-reset form__input input-name"
-                  placeholder="Введите ваше Имя"
-              /></label>
-              <label class="form__label"
-                >Email:
-                <input
-                  type="email"
-                  name="email"
-                  class="input-reset form__input input-email"
-                  placeholder="Введите ваш Email"
-              /></label>
-              <label class="form__label"
-                >Телефон:
-                <input
-                  type="tel"
-                  name="phone"
-                  class="input-reset form__input input-tel"
-                  placeholder="Введите ваш Телефон"
-              /></label>
-              <button class="btn-reset btn btn--accent form__btn">
-                Отправить
-              </button>
-            </form>
-            <p class="popup__descr">
-              Эти данные необходимы для того, чтобы в скором времени мы смогли
-              связаться с вами и обсудить дальнейшие действия. При более личном
-              общении наш консультант ответит на все ваши вопросы.
-            </p>
+            <div class="swiper popup__slider swiper-no-swiping">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide popup__slide">
+                  <h2 class="popup__title section-title">
+                    <span class="section-title__span popup__span"
+                      >Для начала сотрудничества вам нужно</span
+                    >
+                    Заполнить данные
+                  </h2>
+                  <form action="{{'/'}}" method="post" class="form popup__form">
+                    <label class="form__label"
+                      >Имя:
+                      <input
+                        type="text"
+                        name="name"
+                        class="input-reset form__input input-name"
+                        placeholder="Введите ваше Имя"
+                    /></label>
+                    <label class="form__label"
+                      >Email:
+                      <input
+                        type="email"
+                        name="email"
+                        class="input-reset form__input input-email"
+                        placeholder="Введите ваш Email"
+                    /></label>
+                    <label class="form__label"
+                      >Телефон:
+                      <input
+                        type="tel"
+                        name="phone"
+                        class="input-reset form__input input-tel"
+                        placeholder="Введите ваш Телефон"
+                    /></label>
+                    <button class="btn-reset btn btn--accent form__btn">
+                      Отправить
+                    </button>
+                  </form>
+                  <p class="popup__descr">
+                    <span
+                      >Нажимая на кнопку Отправить вы соглашаетесь на обработку
+                      персональных данных.</span
+                    >
+                    Эти данные необходимы для того, чтобы в скором времени
+                    мы смогли связаться с вами и обсудить дальнейшие действия.
+                    При более личном общении наш консультант ответит на все ваши
+                    вопросы.
+                  </p>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <h3 class="popup__title section-title">
+                    <span class="section-title__span popup__span"
+                      >Также у вас есть возможность заполнить</span
+                    >
+                    Бриф в Google Forms
+                  </h3>
+                  <div class="slide__content">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLScB6jwZhcqnwqLYx5zsTKESD6uEkIpb3XdfAjciYpbH6L3Uyg/viewform?usp=sharing"
+                      class="btn btn--accent btn--block slide__link"
+                      target="_blank"
+                      >Заполнить бриф</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <button
+            class="btn-reset btn btn--accent btn--slider popup__slider-btn popup__slider-btn--prev"
+            title="Альтернатива"
+          >
+            <span class="fa fa-light fa-chevron-left"></span>
+          </button>
+          <button
+            class="btn-reset btn btn--accent btn--slider popup__slider-btn popup__slider-btn--next"
+            title="Альтернатива"
+          >
+            <span class="fa fa-light fa-chevron-right"></span>
+          </button>
         </div>
       </div>
     </div>
